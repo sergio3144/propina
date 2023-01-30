@@ -1,0 +1,172 @@
+:root {
+    --color-body: #86bbd8;
+    --color-btns: #336699;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-body);
+    font-size: 62.5%;
+}
+.container-calculator {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 10px;
+    form {
+        margin: 0 auto;
+    }
+    .title {
+        background-color: var(--color-btns);
+        color: white;
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+    .facture {
+        margin: 50px 0 0 20px;
+    }
+    .input-price {
+        height: 40px;
+        width: 550px;
+        margin-top: 10px;
+        outline: none;
+        font-size: 1.3rem;
+        padding-left: 50px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgb(146, 146, 146);
+    }
+    img {
+        position: relative;
+        background-color: #336699;
+        width: 40px;
+        border-radius: 5px 0 0 5px;
+        top: 13px;
+        right: 553px;
+    }
+    .title-input {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .user-cuenta {
+        margin: 20px 0 0 20px;
+    }
+    .service {
+        margin: 20px 0 30px 20px;
+        select {
+            padding: 10px 405px 10px 10px;
+            margin: 10px 0 5px 0;
+            font-size: 1rem;
+            font-weight: normal;
+            font-size: 1.2rem;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculo {
+        margin-bottom: 20px;
+        width: 300px;
+        height: 35px;
+        background-color: var(--color-btns);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .calculo:hover {
+        background-color: transparent;
+        color: var(--color-btns);
+        transition: .3s;
+        border: 1px solid var(--color-btns);
+        letter-spacing: 1px;
+    }
+}
+.outinput {
+    padding-bottom: 20px;
+    display: none;
+    .title-spinner {
+        text-align: center;
+        font-size: 1.5rem;
+        opacity: .8;
+    }
+}
+
+.datos {
+    text-align: center;
+    padding-bottom: 20px;
+    .dates {
+        font-size: 1.5rem;
+        opacity: .8;
+    }
+}
+
+.spinner-active {
+    display: block;
+}
+.desactivado {
+    display: none;
+}
+
+@media(max-width: 780px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-calculator {
+        .title-input {
+            font-size: 1.1rem;
+        }
+        .facture{
+            margin-top: 20px;
+        }
+        .user-cuenta {
+            margin-top: 5px;
+        }
+        .service {
+            margin-top: 5px;
+        }
+        .calculo {
+            width: 100px;
+        }
+        .title {
+            font-size: 1.1rem
+        }
+        margin: 5px;
+        max-width: 500px;
+        margin-top: 80px;
+        .input-price {
+            width: 85%;
+            padding-left: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .service {
+            margin: 30px 20px 20px 20px;
+            select {
+                opacity: .8;
+                font-size: 1.1rem;
+                width: 90%;
+                padding: 10px 0 10px 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

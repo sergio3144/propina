@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>propina usuarios</title>
+</head>
+<body>
+    
+    <section class="container-calculator">
+        <h1 class="title">CALCULADORA DE PROPINAS</h1>
+        <form action="">
+             <div class="facture">
+            <p class="title-input">¿Cuánto fue tu factura?</p>
+            <input type="number" class="input-price price-factura" placeholder="Valor de la factura...">
+            <img src="./accets/dolar.png" alt="price">
+        </div>
+
+        <div class="user-cuenta">
+            <p class="title-input">¿Cuántas personas comparten la cuenta?</p>
+            <input type="number" class="input-price user" placeholder="Personas que van a compartir la cuenta...">
+
+            <img src="./accets/user.png" alt="cuenta">
+        </div>
+
+        <div class="service">
+            <p class="title-input">Cómo estuvo tu servicio</p>
+            <select name="" id="">
+                <option class="option-service value1" value="0">Escojer...</option>
+                <option class="option-service value2" value="0.2">Genial - 20%</option>
+                <option class="option-service value3" value="0.1">Bueno - 10%</option>
+                <option class="option-service value4" value="0.02">Malo - 2%</option>
+            </select>
+        </div>
+        <div class="btn-container">
+            <button class="calculo">Calcular</button>
+        </div>
+        </form>
+       <div class="outinput">
+            <h1 class="title-spinner">Calculando datos...</h1>
+       </div>
+       <div class="datos">
+            <h1 class="dates propina"></h1>
+            <h1 class="dates monto"></h1>
+            <h1 class="dates cadaPersona"></h1>
+       </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
